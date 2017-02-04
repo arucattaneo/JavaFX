@@ -17,8 +17,8 @@ public class Persona {
     private SimpleStringProperty apellido;
     private SimpleStringProperty dni;
 
-    public SimpleStringProperty getNombre() {
-        return nombre;
+    public String getNombre() {
+        return nombre.get();
     }
 
     public void setNombre(String nombre) {
@@ -41,8 +41,8 @@ public class Persona {
         this.dni.set(dni);
     }
 
-    public Persona(SimpleStringProperty nombre, SimpleStringProperty apellido, SimpleStringProperty dni) {
-        this.nombre = new (nombre);
+    public Persona(String nombre, String apellido, String dni) {
+        this.nombre = new SimpleStringProperty (nombre);
         this.apellido = new SimpleStringProperty (apellido);
         this.dni = new SimpleStringProperty (dni);
     }
