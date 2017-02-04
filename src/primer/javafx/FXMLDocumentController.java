@@ -42,7 +42,6 @@ public class FXMLDocumentController implements Initializable {
    
     @FXML
     private void grabarButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
         Persona p1= new Persona(txtNombre.getText(), txtApellido.getText(), txtDni.getText());
         data.add(p1);
     }
