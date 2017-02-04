@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="266.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="primer.javafx.FXMLDocumentController">
+    <children>
+      <SplitPane dividerPositions="0.5027027027027027" layoutX="-1.0" prefHeight="268.0" prefWidth="557.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="19.0" prefHeight="16.0" prefWidth="47.0" text="Nombre" />
+                  <Label layoutX="25.0" layoutY="61.0" text="Apellido" />
+                  <Separator layoutX="4.0" layoutY="46.0" prefHeight="4.0" prefWidth="298.0" />
+                  <Separator layoutX="4.0" layoutY="89.0" prefHeight="4.0" prefWidth="304.0" />
+                  <Label layoutX="37.0" layoutY="107.0" text="DNI" />
+                  <Separator layoutX="4.0" layoutY="131.0" prefHeight="4.0" prefWidth="298.0" />
+                  <TextField fx:id="txtNombre" layoutX="101.0" layoutY="16.0" prefHeight="22.0" prefWidth="170.0" />
+                  <TextField fx:id="txtApellido" layoutX="101.0" layoutY="57.0" prefHeight="22.0" prefWidth="170.0" />
+                  <TextField fx:id="txtDni" layoutX="101.0" layoutY="101.0" prefHeight="22.0" prefWidth="170.0" />
+                  <Button fx:id="grabarButton" layoutX="22.0" layoutY="221.0" mnemonicParsing="false" onAction="#grabarButtonAction" text="Grabar" />
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <TableView fx:id="tabla" prefHeight="266.0" prefWidth="273.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="colNombre" prefWidth="90.0" text="Nombre" />
+                      <TableColumn fx:id="colApellido" prefWidth="97.0" text="Apellido" />
+                        <TableColumn fx:id="colDni" prefWidth="85.0" text="DNI" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</AnchorPane>
