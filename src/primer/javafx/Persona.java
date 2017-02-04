@@ -21,28 +21,28 @@ public class Persona {
         return nombre;
     }
 
-    public void setNombre(SimpleStringProperty nombre) {
-        this.nombre = nombre;
+    public void setNombre(String nombre) {
+        this.nombre.set(nombre);
     }
 
-    public SimpleStringProperty getApellido() {
-        return apellido;
+    public String getApellido() {
+        return apellido.get();
     }
 
-    public void setApellido(SimpleStringProperty apellido) {
-        this.apellido = apellido;
+    public void setApellido(String apellido) {
+        this.apellido.get();
     }
 
-    public SimpleStringProperty getDni() {
-        return dni;
+    public String getDni() {
+        return dni.get();
     }
 
-    public void setDni(SimpleStringProperty dni) {
-        this.dni = dni;
+    public void setDni(String dni) {
+        this.dni.set(dni);
     }
 
-    public Persona(String nombre, String apellido, String dni) {
-        this.nombre = new SimpleStringProperty (nombre);
+    public Persona(SimpleStringProperty nombre, SimpleStringProperty apellido, SimpleStringProperty dni) {
+        this.nombre = new (nombre);
         this.apellido = new SimpleStringProperty (apellido);
         this.dni = new SimpleStringProperty (dni);
     }
